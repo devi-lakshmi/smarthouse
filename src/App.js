@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+//import DisplayTotalPower from './component/DispalyTotalPower';
+//import DisplayTotalPower from './component/DispalyTotalPower';
+import LampFunction from './component/LampFunction';
+import RadioFunction from './component/RadioFunction';
+import ThermostatFunction from './component/ThermostatFunction';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LampFunction />
+     <RadioFunction />
+    <ThermostatFunction />
+   
     </div>
   );
 }
