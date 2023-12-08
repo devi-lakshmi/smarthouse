@@ -10,7 +10,7 @@ export default function LampFunction() {
   const dispatch = useDispatch();
 
   const handleToggleLamp =(id) =>{
-     dispatch(toggleLamp(id));
+     dispatch(toggleLamp({id}));
   };
   
   
@@ -21,7 +21,7 @@ export default function LampFunction() {
       <div>
         {lamps.map((lamp) => (
           <div key={lamp.id}>
-            <p>Lamp {lamp.id} - {lamp.power ? 'On' : 'Off'}</p>
+            <span>Lamp {lamp.id} - {lamp.power ? 'On' : 'Off'}</span>
           <button onClick={() => handleToggleLamp(lamp.id)}>Turn On</button>
           <button onClick={() => handleToggleLamp(lamp.id)}>Turn Off</button> 
             
